@@ -21,7 +21,7 @@
 
             <div class="form-group btn-content">
                 <button class="btn btn-secondary" @click="calculate">Calcular</button>
-                <a v-if="download" @click="downloadFile">Download</a>
+                <a v-if="download" @click="downloadFile" style="cursor: pointer">Download</a>
             </div>
         </div>
     </div>
