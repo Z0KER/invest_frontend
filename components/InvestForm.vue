@@ -55,7 +55,6 @@
             },
 
             calculate() {
-                console.log('ola')
                 api.post('/',
                     {
                         currentValue: this.currentValue,
