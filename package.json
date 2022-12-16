@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "start": "nuxt start"
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
