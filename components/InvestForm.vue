@@ -21,7 +21,7 @@
 
             <div class="form-group btn-content">
                 <button class="btn btn-secondary" @click="calculate">Calcular</button>
-                <a v-if="download" href="http://localhost:8080/download">Download</a>
+                <a v-if="download" @click="downloadFile">Download</a>
             </div>
         </div>
     </div>
@@ -65,7 +65,12 @@
                 )
 
                 this.download = true
-            }
+            },
+
+            downloadFile() {
+                this.download = false
+                window.location.href = `${process.env.baseURL}/download`
+            },
         }
     }
 </script>
